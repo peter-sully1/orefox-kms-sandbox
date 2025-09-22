@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.eggs/
+*.log
+
+# Django
+db.sqlite3
+media/
+staticfiles/
+.env
+.env.*
+
+# Migrations (optional: keep if you want them versioned)
+*/migrations/__pycache__/
+*/migrations/*.pyc
+*/migrations/*.pyo
+*/migrations/*.log
+*/migrations/*.sqlite3
+# Uncomment next line if you DON'T want migration files in git
+# */migrations/*.py
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+env/
+env.bak/
+
+# VS Code / Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker
+**/.docker/
+.dockerignore
+docker-compose.override.yml
+docker-compose.override.*.yml
+
+# Byte-compiled / cache
+*.cache
+*.mo
+*.pot
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Coverage / Testing
+.coverage
+coverage.xml
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+
+# Build artifacts
+dist/
+build/
+*.manifest
+*.spec
+
+# Logs
+*.log
+logs/
