@@ -42,27 +42,48 @@ This proof-of-concept demonstrates how documents (e.g., PDFs of exploration repo
 ## 📂 Repository Structure
 
 orefox-kms-sandbox/
-├── .env.example              # Example environment variables (copy to .env)
-├── docker-compose.yml        # Defines services: db, minio, create-bucket, web
+
+├── .env.example              # Example environment variables (copy to .env)
+
+├── docker-compose.yml        # Defines services: db, minio, create-bucket, web
+
 ├── infra/
-│   └── web/
-│       ├── Dockerfile        # Builds the Django web container
-│       └── requirements.txt  # Python dependencies
-├── manage.py                 # Django entrypoint
-├── config/                   # Django project config
-│   ├── settings.py           # Django + PostGIS + MinIO configuration
-│   ├── urls.py               # URL routes (admin, core app, healthcheck)
-│   └── …
-├── core/                     # First Django app
-│   ├── models.py             # ProjectOp + Document models
-│   ├── admin.py              # Registers models with admin (GIS map widget)
-│   ├── views.py              # Home + upload views
-│   ├── urls.py               # Core routes
-│   └── …
+
+│   └── web/
+
+│       ├── Dockerfile        # Builds the Django web container
+
+│       └── requirements.txt  # Python dependencies
+
+├── manage.py                 # Django entrypoint
+
+├── config/                   # Django project config
+
+│   ├── settings.py           # Django + PostGIS + MinIO configuration
+
+│   ├── urls.py               # URL routes (admin, core app, healthcheck)
+
+│   └── ...
+
+├── core/                     # First Django app
+
+│   ├── models.py             # ProjectOp + Document models
+
+│   ├── admin.py              # Registers models with admin (GIS map widget)
+
+│   ├── views.py              # Home + upload views
+
+│   ├── urls.py               # Core routes
+
+│   └── ...
+
 └── templates/
-├── base.html             # Shared HTML layout
-├── core/home.html        # Homepage: lists projects & documents
-└── core/upload.html      # Document upload form
+
+├── base.html             # Shared HTML layout
+
+├── core/home.html        # Homepage: lists projects & documents
+
+└── core/upload.html      # Document upload form
 
 ---
 
