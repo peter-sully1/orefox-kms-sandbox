@@ -6,7 +6,7 @@ This proof-of-concept demonstrates how documents (e.g., PDFs of exploration repo
 
 ---
 
-## ✨ Features
+## Features
 
 - **Django + GeoDjango + HTMX**
   - Web application with interactive templates.
@@ -73,7 +73,7 @@ orefox-kms-sandbox/
 git clone https://github.com/<your-org>/orefox-kms-sandbox.git
 cd orefox-kms-sandbox
 ```
-2. Create a .env file
+2. Create a .env file or copy from .env.example 
 ```bash
 POSTGRES_DB=orefox
 POSTGRES_USER=orefox
